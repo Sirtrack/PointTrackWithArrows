@@ -1,0 +1,32 @@
+h2. PointTrackWithArrows
+
+Create an OpenLayers PointTrack with direction (arrows).
+
+h3. Usage
+
+<pre><code>
+        var l = new OpenLayers.Layer.PointTrack( "PointTrack", {
+          styleMap : new OpenLayers.Style({
+              graphicName : "track",
+              strokeColor : "red",
+              fillColor : "red",
+              pointRadius : 2,
+              fillOpacity : 0.5,
+              strokeWidth : 2,
+              graphicName: "arrow",
+              rotation : "${angle}"
+          });
+        });
+</code></pre>
+
+h3. Background 
+
+I've merged OpenLayer's PointTrack code from these sources (thank you for all the hard work!):
+
+"http://gaganb.wordpress.com/2010/09/30/draw-line-direction-on-openlayers-feature/":http://gaganb.wordpress.com/2010/09/30/draw-line-direction-on-openlayers-feature/
+"http://geometricnet.sourceforge.net/examples/directions.html":http://geometricnet.sourceforge.net/examples/directions.html
+"http://geometricnet.sourceforge.net/examples/Direction.js":http://geometricnet.sourceforge.net/examples/Direction.js
+
+
+
+
